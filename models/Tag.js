@@ -6,11 +6,13 @@ class Tag extends Model {}
 
 Tag.init(
   {
-    id: {
+    tagid: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       primaryKey: true,
       autoIncrement: true,
+      // onDelete: 'NO ACTION',
+      // onUpdate: 'NO ACTION'
     },
     tag_name: {
       type: DataTypes.STRING, 
