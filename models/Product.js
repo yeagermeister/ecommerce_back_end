@@ -34,11 +34,11 @@ Product.init(
         isNumeric: true,
       },
     },
-    category_id: {
+    categoryid: {
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id',
+        key: 'categoryid',
       },
     },
   },
